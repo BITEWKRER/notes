@@ -4,7 +4,7 @@
 
 ## c++ 编程流程
 
-![image-20200416145332795](D:\notes\images\image-20200416145332795.png)
+![image-20200416145332795](../images/image-20200416145332795.png)
 
 ### 多态性
 
@@ -35,7 +35,7 @@ for(int j = 2;i<sqrt(m);j++){
 
 ## 流状态
 
-![image-20200309211438725](D:\notes\images\image-20200309211438725.png)
+![image-20200309211438725](../images/image-20200309211438725.png)
 
 ### 三个常用流状态
 
@@ -69,9 +69,9 @@ int main()
 
 
 
-![image-20200309211505573](D:\notes\images\image-20200309211505573.png)
+![image-20200309211505573](../images/image-20200309211505573.png)
 
-![image-20200309211523879](D:\notes\images\image-20200309211523879.png)
+![image-20200309211523879](../images/image-20200309211523879.png)
 
 ## 文件流
 
@@ -81,13 +81,13 @@ int main()
 >
 > #include<ofistream>	输出文件流	默认打开方式ios::out
 
-![image-20200309211611921](D:\notes\images\image-20200309211611921.png)
+![image-20200309211611921](../images/image-20200309211611921.png)
 
 - P71
 
 ## goto
 
-![image-20200309215127730](D:\notes\images\image-20200309215127730.png)
+![image-20200309215127730](../images/image-20200309215127730.png)
 
 ## 数据类型
 
@@ -179,13 +179,13 @@ $$
 
 **十进制浮点数转换为二级制浮点数：乘2取整法**
 
-![image-20200417185556249](D:\notes\images\image-20200417185556249.png)
+![image-20200417185556249](../images/image-20200417185556249.png)
 
 ## 编译执行过程
 
 **书写（\*.cpp/\*.c++文件）->预处理（*.ii 文件）->预编译（\*.s文件）->目标文件(\*.o)->连接->执行**
 
-![image-20200312180830909](D:\notes\images\image-20200312180830909.png)
+![image-20200312180830909](../images/image-20200312180830909.png)
 
 ## 字符指针
 
@@ -205,15 +205,15 @@ int main(){
 
 ### 常见库函数操作
 
-![image-20200315182432505](D:\notes\images\image-20200315182432505.png)
+![image-20200315182432505](../images/image-20200315182432505.png)
 
 ## string
 
-![image-20200315182705074](D:\notes\images\image-20200315182705074.png)
+![image-20200315182705074](../images/image-20200315182705074.png)
 
 ### 重点，未解
 
-![image-20200417193953892](D:\notes\images\image-20200417193953892.png)
+![image-20200417193953892](../images/image-20200417193953892.png)
 
 ## char和string的输入输出
 
@@ -228,7 +228,7 @@ int main(){
 
 > #include<sstream>
 
-![image-20200315183944569](D:\notes\images\image-20200315183944569.png)
+![image-20200315183944569](../images/image-20200315183944569.png)
 
 ## 数组
 
@@ -390,7 +390,7 @@ int main(int argc, char const *argv[])
 - 不可以指向其他变量
 - 定义时赋值
 
-![image-20200419210709535](D:\notes\images\image-20200419210709535.png)
+![image-20200419210709535](../images/image-20200419210709535.png)
 
 赋值时只能赋值给相同类型，即`const int *b = &a; int * p =&b ;`是**错误**的，应该是`const int *p = &b;`
 
@@ -417,7 +417,7 @@ int main(int argc, char const *argv[])
 
 **操作符优先级和结合性**
 
-![image-20200421091540645](D:\notes\images\image-20200421091540645.png)
+![image-20200421091540645](../images/image-20200421091540645.png)
 
 ```c++
 	++a++;	//++a(++),右结合性
@@ -436,7 +436,7 @@ int main(int argc, char const *argv[])
 
 #### 隐式转换
 
-![image-20200420202932598](D:\notes\images\image-20200420202932598.png)
+![image-20200420202932598](../images/image-20200420202932598.png)
 
 #### 显式转换：不太懂
 
@@ -478,25 +478,25 @@ int main(int argc, char const *argv[])
 
 > 位于操作将`&`两个操作数的每一位做与操作，**都为一则为一，否则为零**
 
-![image-20200421092320901](D:\notes\images\image-20200421092320901.png)
+![image-20200421092320901](../images/image-20200421092320901.png)
 
 #### 位或操作
 
 > 位或操作`|`是将两个操作数每一位做或操作，**都为零为零，否则为一**
 
-![image-20200420221729849](D:\notes\images\image-20200420221729849.png)
+![image-20200420221729849](../images/image-20200420221729849.png)
 
 #### 位异或操作
 
 > 位异或是将两个操作数的每一次做异或操作，**都为0或1，值为0，否则为1**
 
-![image-20200420221919580](D:\notes\images\image-20200420221919580.png)
+![image-20200420221919580](../images/image-20200420221919580.png)
 
 #### 位反操作
 
 > 位反是将每一个操作数取反，**0变成1，1变成0**
 
-![image-20200420222012319](D:\notes\images\image-20200420222012319.png)	
+![image-20200420222012319](../images/image-20200420222012319.png)	
 
 习题4：
 

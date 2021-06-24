@@ -25,7 +25,7 @@ Java AIO(NIO.2): 异步非阻塞，AIO引入异步通道的概念，采用了Pro
 
 ### 三者关系
 
-​	![image-20210112100406041](D:\notes\images\image-20210112100406041.png)
+​	![image-20210112100406041](../images/image-20210112100406041.png)
 
 1)每 个channel都会对应一-个Bufer
 2)Selector对对应一个线程，-个线程对应多个channel(连接)
@@ -39,7 +39,7 @@ Java AIO(NIO.2): 异步非阻塞，AIO引入异步通道的概念，采用了Pro
 
 ## Buffer
 
-![image-20210116105610897](D:\notes\images\image-20210116105610897.png)
+![image-20210116105610897](../images/image-20210116105610897.png)
 
 - 常用Buffer子类
   1) ByteBuffer,存储字节数据到缓冲区
@@ -52,7 +52,7 @@ Java AIO(NIO.2): 异步非阻塞，AIO引入异步通道的概念，采用了Pro
 
 - 重要属性
 
-![image-20210116104227423](D:\notes\images\image-20210116104227423.png)
+![image-20210116104227423](../images/image-20210116104227423.png)
 
 - buffer方法
 

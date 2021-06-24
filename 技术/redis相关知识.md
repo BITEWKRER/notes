@@ -628,7 +628,7 @@
 
     - 缓存过期策略
 
-      ![image-20191218151257128](D:\notes\images\image-20191218151257128.png)
+      ![image-20191218151257128](../images/image-20191218151257128.png)
 
     - maxmemory-policy：noeviction
 
@@ -879,7 +879,7 @@ docker_redis:0>slaveof 127.0.0.1 6380
 
 ### 复制原理
 
-![image-20191219085505457](D:\notes\images\image-20191219085505457.png)
+![image-20191219085505457](../images/image-20191219085505457.png)
 
 ###  哨兵模式
 

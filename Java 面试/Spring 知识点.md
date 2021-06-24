@@ -4,7 +4,7 @@
 
 ## 优势
 
-![image-20200304175159335](D:\notes\images\image-20200304175159335.png)
+![image-20200304175159335](../images/image-20200304175159335.png)
 
 **耦合**：程序间的依赖关系
 
@@ -54,7 +54,7 @@ graph LR
 private AccountEao dao = (AccountEao)BeanFactory.getBean("accountEao");
 ```
 
-![image-20191202204505925](D:\notes\images\image-20191202204505925.png)
+![image-20191202204505925](../images/image-20191202204505925.png)
 
 
 
@@ -445,7 +445,7 @@ bean标签的scope属性：
   - 活着：在使用过程中
   - 销毁：当对象长时间不用且没有别的对象引用时，由java垃圾回收器回收
 
-![image-20200304194109742](D:\notes\images\image-20200304194109742.png)
+![image-20200304194109742](../images/image-20200304194109742.png)
 
 ### bean的装配方式
 
@@ -755,7 +755,7 @@ advice就是表示具体处理的内容
 
     整个invoke方法在执行
 
-  ![image-20191207153934898](D:\notes\images\image-20191207153934898.png)
+  ![image-20191207153934898](../images/image-20191207153934898.png)
 
 - **Target（对象）**
 
@@ -777,7 +777,7 @@ advice就是表示具体处理的内容
 
 **advice（通知）**
 
-![image-20191207163031726](D:\notes\images\image-20191207163031726.png)
+![image-20191207163031726](../images/image-20191207163031726.png)
 
 aop配置
 
@@ -894,7 +894,7 @@ public class Logger{
 
 ### 事务控制案例
 
-![image-20191208152529614](D:\notes\images\image-20191208152529614.png)
+![image-20191208152529614](../images/image-20191208152529614.png)
 
 ## spring 事务控制
 
@@ -902,41 +902,41 @@ public class Logger{
 
 ### 基于xml的事务控制
 
-![image-20191208155257216](D:\notes\images\image-20191208155257216.png)
+![image-20191208155257216](../images/image-20191208155257216.png)
 
 1. 配置事务管理器
 
-   ![image-20191208155451493](D:\notes\images\image-20191208155451493.png)
+   ![image-20191208155451493](../images/image-20191208155451493.png)
 
 2. 配置事务的通知
 
-   ![image-20191208155543435](D:\notes\images\image-20191208155543435.png)
+   ![image-20191208155543435](../images/image-20191208155543435.png)
 
 3. 配置AOP这个i部分通用切入点表达式
 
 4. 建立事务通知和切入点表达式的对应关系
 
-   ![image-20191208155607775](D:\notes\images\image-20191208155607775.png)
+   ![image-20191208155607775](../images/image-20191208155607775.png)
 
 5. 配置事务的属性在tx：attrubutes的内部
 
-   ![image-20191208155818740](D:\notes\images\image-20191208155818740.png)
+   ![image-20191208155818740](../images/image-20191208155818740.png)
 
 ### 基于注解的事务控制
 
-![image-20191208163208497](D:\notes\images\image-20191208163208497.png)
+![image-20191208163208497](../images/image-20191208163208497.png)
 
 1. 配置事务管理器
 
-   ![image-20191208163318550](D:\notes\images\image-20191208163318550.png)
+   ![image-20191208163318550](../images/image-20191208163318550.png)
 
 2. 开启Spring对注解事务的支持
 
-   ![image-20191208163326309](D:\notes\images\image-20191208163326309.png)
+   ![image-20191208163326309](../images/image-20191208163326309.png)
 
 3. 在需要事务支持的地方使用==@Transactional==注解
 
-   ![image-20191208163731015](D:\notes\images\image-20191208163731015.png)
+   ![image-20191208163731015](../images/image-20191208163731015.png)
 
 ### spring基于注解的纯声明式事务的配置
 
@@ -946,19 +946,19 @@ public class Logger{
 
 ### 直接引用
 
-![image-20191125134531324](D:\notes\images\image-20191125134531324.png)
+![image-20191125134531324](../images/image-20191125134531324.png)
 
 ### 属性内引用
 
-![ac430a54.png](D:\notes\images\ac430a54.png)
+![ac430a54.png](../images/ac430a54.png)
 
 ### 内部bean引用
 
-![e6af3ec5.png](D:\notes\images\e6af3ec5.png)
+![e6af3ec5.png](../images/e6af3ec5.png)
 
 ### 级联属性赋值
 
-![be3721b8.png](D:\notes\images\be3721b8.png)
+![be3721b8.png](../images/be3721b8.png)
 
 ```
 	<!-- constructor 装配 -->  

@@ -161,7 +161,7 @@ NEVER：非事务
 
 *FactoryPatternDemo* 类使用 *ShapeFactory* 来获取 *Shape* 对象
 
-![image-20210206111215159](D:\notes\images\image-20210206111215159.png)
+![image-20210206111215159](../images/image-20210206111215159.png)
 
 优点：
 

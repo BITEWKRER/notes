@@ -11,12 +11,12 @@
 ## 工程创建
 &emsp;&emsp;&emsp;创建Maven工程-->create for archtype-->webapp
 ## 创建项目结构
-&emsp;&emsp;![image-20191125112943515](D:\notes\images\image-20191125112943515.png)
+&emsp;&emsp;![image-20191125112943515](../images/image-20191125112943515.png)
 
 在recourses目录下创建	`dbconfig.properties`,`log4j.properties`,`mysqlConfig.xml`,`springmvc.xml`,`applicationContext.xml`
 
 ## 工作流程
-&emsp;&emsp;![b9055e11.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/b9055e11.png)
+&emsp;&emsp;![b9055e11.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/b9055e11.png)
 ## 在pom.xml添加相关依赖 --- mybatis
 ```xml
 <dependencies>
@@ -321,7 +321,7 @@ public class test {
 
 ```
 输出 
-![31a0456e.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/31a0456e.png)
+![31a0456e.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/31a0456e.png)
 至此spring框架已经创建
 
 ### 建立spring mvc
@@ -445,10 +445,10 @@ public class UserController {
 	</body>
 </html>
 ```
-![cb4ea08b.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/cb4ea08b.png)
+![cb4ea08b.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/cb4ea08b.png)
 ## 页面如果做成显示，自此成功添加spring mvc 开始整合
 在整合之前需要明白，我们需要在controller中调用service，最快捷的便是使用依赖注入，而至今使用Tomcat服务器只加载了springmvc.xml文件，并没有applicationContext.xml的加载（也就是spring并没有被加载），所以可以通过监听ServeltContext域对象，在创建时加载spring的配置文件（applicationContext.xml）
-![2f485e53.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/2f485e53.png)
+![2f485e53.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/2f485e53.png)
 
 ## 配置监听器
 在web.xml文件下添加listener,context-param设置监听和applicationContext.xml的文件路径
@@ -527,7 +527,7 @@ public class UserController {
     }
 }
 ```
-![357efc1b.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/357efc1b.png)
+![357efc1b.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/357efc1b.png)
 这样spring mvc 就已经整合完毕了！
 ## 建立mybatis环境
 在UserDao中使用注解查询
@@ -606,7 +606,7 @@ public interface UserDao {
     }
 ```
 输出结果：
-![28e6737f.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/28e6737f.png)
+![28e6737f.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/28e6737f.png)
 说明了mybatis可用，那么可以开始整合了
 
 ## 整理mybatis,思路相同，同样使用依赖注入，将mysqlConfig.xml添加到容器中，并自动注入
@@ -796,7 +796,7 @@ public class UserController {
 </beans>
 ```
 实现访问
-![21e09f30.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/21e09f30.png)
+![21e09f30.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/21e09f30.png)
 ## 实现插入
 controller
 ```java
@@ -878,8 +878,8 @@ public interface UserDao {
 }
 ```
 访问路径(http://localhost:8080/ssmWork_war_exploded/save)
-![6bacaaf3.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/6bacaaf3.png)
+![6bacaaf3.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/6bacaaf3.png)
 控制台输出
-![c8cb4ee1.png](D:\notes\images\e9441f7f-7078-46c9-b8fd-b162dcbcba4e/c8cb4ee1.png)
+![c8cb4ee1.png](../images/e9441f7f-7078-46c9-b8fd-b162dcbcba4e/c8cb4ee1.png)
 这样我们的ssm框架就完成整合了，可以去干大事了！！！！
 码云开源库：[码云链接](https://gitee.com/comiiiii/SSM)

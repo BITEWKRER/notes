@@ -62,7 +62,7 @@ public class HelloController {
 
 ### 5.运行应用
 
-![image-20191128170158323](D:\notes\images\image-20191128170158323.png)
+![image-20191128170158323](../images/image-20191128170158323.png)
 
 ### 6.部署应用
 
@@ -124,23 +124,23 @@ public class HelloController {
 
 Starters可以理解为启动器，它包含了一系列可以集成到应用里面的依赖包，你可以一站式集成 Spring 及其他技术，而不需要到处找示例代码和依赖包。
 
-![image-20191130182705948](D:\notes\images\image-20191130182705948.png)
+![image-20191130182705948](../images/image-20191130182705948.png)
 
  ## spring initialize 创建spring boot 工程
 
 ### 相关步骤
 
-1. 选择spring boot 创建向导![image-20191130185400402](D:\notes\images\image-20191130185400402.png)
+1. 选择spring boot 创建向导![image-20191130185400402](../images/image-20191130185400402.png)
 
-2. 输入基本信息、选择jdk版本![image-20191130185528880](D:\notes\images\image-20191130185528880.png)
+2. 输入基本信息、选择jdk版本![image-20191130185528880](../images/image-20191130185528880.png)
 
 3. 选择spring Boot的相关功能组件(选择我们需要的模块如：web、SQL等)![选择spring Boot的相关功能组件](D:\notes\image-20191130185623392.png)
 
-4. 输入工程名称![image-20191130185843368](D:\notes\images\image-20191130185843368.png)
+4. 输入工程名称![image-20191130185843368](../images/image-20191130185843368.png)
 
 5. 创建完成
 
-   ![image-20191130190033017](D:\notes\images\image-20191130190033017.png)
+   ![image-20191130190033017](../images/image-20191130190033017.png)
 
 ### 文件目录结构解析
 
@@ -167,7 +167,7 @@ resources文件夹下：
 ## 配置文件
 	- YAML
 	- properties
-![image-20191130192044034](D:\notes\images\image-20191130192044034.png)
+![image-20191130192044034](../images/image-20191130192044034.png)
 
 ###  YAML
 
@@ -240,19 +240,19 @@ friends:{name: comi,age: 18}
 
   ​		==prefix==:指定哪一个配置与bean组件的属性进行绑定
   
-   ![image-20191130203644460](D:\notes\images\image-20191130203644460.png)
+   ![image-20191130203644460](../images/image-20191130203644460.png)
 
 - 在application.yml中书写配置
 
-  ![image-20191130203208137](D:\notes\images\image-20191130203208137.png)
+  ![image-20191130203208137](../images/image-20191130203208137.png)
 
 - 在properties中书写配置（二者选其一，若都存在，propertoes优先级高于yaml）
 
   若出现乱码需要在idea中设置`setting -> 搜索 file encoding `
 
-  ![image-20191201150802402](D:\notes\images\image-20191201150802402.png)
+  ![image-20191201150802402](../images/image-20191201150802402.png)
 
-![image-20191201150323466](D:\notes\images\image-20191201150323466.png)
+![image-20191201150323466](../images/image-20191201150323466.png)
 
 
 
@@ -260,7 +260,7 @@ friends:{name: comi,age: 18}
 
   在test类中可以进行自动注入
 
-  ![image-20191130203520647](D:\notes\images\image-20191130203520647.png)
+  ![image-20191130203520647](../images/image-20191130203520647.png)
 
 ### @value和@ConfigurationProperties的区别
 
@@ -268,7 +268,7 @@ friends:{name: comi,age: 18}
 
 **需要对应bean对象使用ConfigurationProperties**
 
-![image-20191201151938433](D:\notes\images\image-20191201151938433.png)
+![image-20191201151938433](../images/image-20191201151938433.png)
 
 ### @PropertySource和@ImportResource
 
@@ -559,7 +559,7 @@ logging.file.name=springboot.log
    > “/”:当前项目的根路径
    > ```
 
-   ![image-20191210193207963](D:\notes\images\image-20191210193207963.png)
+   ![image-20191210193207963](../images/image-20191210193207963.png)
 
 3. 欢迎页配置，所有静态资源文件夹下的`index.html`
 
@@ -571,7 +571,7 @@ logging.file.name=springboot.log
 
    **favicon.ico**：都是在`**/favicon.ico`都是在静态资源文件夹下寻找
 
-   ![image-20191210194441932](D:\notes\images\image-20191210194441932.png)
+   ![image-20191210194441932](../images/image-20191210194441932.png)
 
 5. 修改**默认静态资源**文件夹
 
@@ -718,13 +718,13 @@ Springboot对springmvc的自动配置不用了，而是所有配置都是我们�
 >    1. 创建`login.properties`文件
 >    2. 创建`login_zh_CN.properties`文件
 >
->    ![image-20191211113503176](D:\notes\images\image-20191211113503176.png)
+>    ![image-20191211113503176](../images/image-20191211113503176.png)
 >
 > 2. 编写配置文件
 >
 >    1. 点击properties文件，底部选择Resource Bundle,点击添加，填写要国际化的部分
 >
->       ![image-20191211113424415](D:\notes\images\image-20191211113424415.png)
+>       ![image-20191211113424415](../images/image-20191211113424415.png)
 >
 > 3. springboot自动配置好了国际化管理的组件，所以我们需要配置`spring.messages.basename`,如果不配置，就会从类路径下去寻找`messages.properties`文件。
 >
@@ -937,7 +937,7 @@ public void addInterceptors(InterceptorRegistry registry) {
 >       1. ```java
 >          @Component	//添入容器
 >          public class myErrorAttributes extends DefaultErrorAttributes {
->                   
+>                            
 >              @Override
 >              public Map<String, Object> getErrorAttributes(WebRequest webRequest, boolean includeStackTrace) {
 >                  Map<String, Object> map = super.getErrorAttributes(webRequest, includeStackTrace);
@@ -1159,7 +1159,7 @@ spring.datasource.username=api
 spring.datasource.password=xxxx
 ```
 
-相关参数设置，与`name`同级，但此时无法设置参数，还需要将durid添加到容器中![image-20191213095125507](D:\notes\images\image-20191213095125507.png)
+相关参数设置，与`name`同级，但此时无法设置参数，还需要将durid添加到容器中![image-20191213095125507](../images/image-20191213095125507.png)
 
 创建类duridConfig
 
@@ -1337,9 +1337,9 @@ public class mybatis {
 
 ### **JSR107**
 
-![image-20191213154742484](D:\notes\images\image-20191213154742484.png)
+![image-20191213154742484](../images/image-20191213154742484.png)
 
-![image-20191213155545647](D:\notes\images\image-20191213155545647.png)
+![image-20191213155545647](../images/image-20191213155545647.png)
 
 导入依赖
 
@@ -1393,7 +1393,7 @@ public class mybatis {
 
 原理及运行步骤：
 
-![image-20191215204811066](D:\notes\images\image-20191215204811066.png)
+![image-20191215204811066](../images/image-20191215204811066.png)
 
 ##### @CachePut注解
 
@@ -1740,7 +1740,7 @@ spring.redis.host=xx.xx.xx.xx
 
 - `Broker`：表示消息队列的`服务器`实体。
 
-![image-20191219110751778](D:\notes\images\image-20191219110751778.png)
+![image-20191219110751778](../images/image-20191219110751778.png)
 
 #### 运行机制
 
@@ -1748,11 +1748,11 @@ spring.redis.host=xx.xx.xx.xx
 
 >  Direct：直连型，只有路由完全一样时，才会转发。
 
-![image-20191219112119396](D:\notes\images\image-20191219112119396.png)
+![image-20191219112119396](../images/image-20191219112119396.png)
 
 > Fanout：每个发到fanout类型交换器的消息都会分到所有绑定的队列上去。类似于广播，每台子网内的主机都获得一份复制信息，该类型转发消息是最快的。 
 
-![image-20191219112416343](D:\notes\images\image-20191219112416343.png)
+![image-20191219112416343](../images/image-20191219112416343.png)
 
 > Topic：通过`模式匹配`分配消息的路由键属性,将`路由器和某个模式`进行匹配，此时队列需要绑定到一个模式上。
 >
@@ -1762,7 +1762,7 @@ spring.redis.host=xx.xx.xx.xx
 >
 > *：匹配一个**单词**
 
-![image-20191219113220076](D:\notes\images\image-20191219113220076.png)
+![image-20191219113220076](../images/image-20191219113220076.png)
 
 #### 安装RabbitMQ
 

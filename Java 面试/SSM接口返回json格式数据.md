@@ -98,11 +98,11 @@ controller
 ```
 最终效果(注意观察页数也返回的数据)
 请求页数不存在（一般不会存在这种情况，这需要前端渲染）
-![a610c644.png](D:\notes\images\cf739aff-ee7d-422a-852d-7729744105c2/a610c644.png)
+![a610c644.png](../images/cf739aff-ee7d-422a-852d-7729744105c2/a610c644.png)
 请求正常
-![a032d00a.png](D:\notes\images\cf739aff-ee7d-422a-852d-7729744105c2/a032d00a.png)
+![a032d00a.png](../images/cf739aff-ee7d-422a-852d-7729744105c2/a032d00a.png)
 第二页
-![21aed882.png](D:\notes\images\cf739aff-ee7d-422a-852d-7729744105c2/21aed882.png)
+![21aed882.png](../images/cf739aff-ee7d-422a-852d-7729744105c2/21aed882.png)
 ## SSM处理 读取 resources文件下的dao.xml文件
 在pom.xml文件下build标签下加入如下语句即可实现xml语句书写
 ```
